@@ -7,12 +7,6 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-let props = {
-    title : "Stop prolific offenders from committing more crimes",
-    description : "10% of criminals commit half of all crime. We need to tackle this properly, by insisting on prison sentences for people with more than 50 previous offences.",
-    button : "Stop career criminals"
-}
-
 export default function NavbarCard({props}: {props: any}) {
 return (
 <Card className=" xl:w-[40vw] w-[80vw] flex flex-col border-none h-fit justify-between">
