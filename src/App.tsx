@@ -24,7 +24,7 @@ let groomingGangs = {
   return (
     <>
       <Navbar />
-      <div id="hero" className="w-full h-[80vh] flex justify-center items-center">
+      <div id="hero" className="w-full h-[80vh] text-white flex justify-center items-center">
         <div className="flex w-full flex-col justify-center gap-4 h-full">
           <h1 className="text-6xl font-semibold text-left mb-8">The criminal justice system is broken.</h1>
           <h1 className="text-6xl font-normal text-left">Unlike other British problems,</h1>
