@@ -1,54 +1,13 @@
-# React + TypeScript + Vite
+# Crush Crime vibes-site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a site built to demonstrate what a 'clinical' look for the Crush Crime campaign could look like, which prioritises converting the 'dissenter at their own dinner table', Guardian-reading, Islingtonian. 
 
-Currently, two official plugins are available:
+It leads with the individual campaigns -- Repeat offenders, court backlogs, and Grooming Gangs. The demo site is visible here: https://crush-crime.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tech
 
-## Expanding the ESLint configuration
+It is built with Vite + React, using Tailwind and Shadcn components. The components and styles are set up and can be edited according to the guides here: https://ui.shadcn.com/. This means that it is very fast to add more content or components in the same style. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A basic understanding of CSS + Tailwind is desirable when working with this site -- bear in mind that *LLMs are surprisingly bad at CSS* so some manual tweaking will be needed if one intends to vibecode changes. 
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+The site is not functional and is not mobile-optimised. The buttons do not work. It is a **demonstration only**.
